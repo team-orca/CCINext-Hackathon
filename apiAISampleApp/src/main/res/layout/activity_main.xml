@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="48dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/enes"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/coca_cola_red"/>
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/bottle_1"
+        android:layout_below="@id/profile"
+        android:id="@+id/cola"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="34dp" />
+    <TextView
+        android:text="Enes Büfe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey"
+        android:layout_below="@id/profile"
+        android:layout_marginTop="20dp"
+        android:padding="4dp"
+        android:textSize="20sp"
+        android:layout_toRightOf="@id/cola"
+        android:layout_marginLeft="-15dp"
+        android:id="@+id/who" />
+    <TextView
+        android:text="Puan: 100ml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/who"
+        android:padding="4dp"
+        android:textColor="@color/grey"
+        android:textSize="20sp"
+        android:layout_toRightOf="@id/cola"
+        android:layout_marginLeft="-15dp"
+        android:id="@+id/puan" />
+
+
+    <TextView
+        android:text="Ligde Sırası : 2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey"
+        android:layout_below="@id/puan"
+        android:padding="4dp"
+        android:textSize="20sp"
+        android:layout_toRightOf="@id/cola"
+        android:layout_marginLeft="-15dp"
+        android:id="@+id/sıra" />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_toLeftOf="@+id/badge2"
+        app:srcCompat="@drawable/egitimkral"
+        android:id="@+id/badge1"
+        android:layout_alignParentBottom="true"
+        />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/fidbekkral"
+        android:id="@+id/badge2"
+        android:layout_alignParentBottom="true" />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@id/badge2"
+        app:srcCompat="@drawable/parakral"
+        android:id="@+id/badge3"
+        android:layout_alignParentBottom="true"
+        />
+
+    <Switch
+        android:text="Çırağı çağır "
+        android:textColor="@color/coca_cola_red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/switch1" />
+
+</RelativeLayout>
